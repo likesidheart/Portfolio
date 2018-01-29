@@ -1,0 +1,272 @@
+<html lang="en">
+
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+
+    <title>SelBye</title>
+
+  
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+   <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">SelBye</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Your City <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Toronto</a></li>
+            <li><a href="#">Windsor</a></li>
+            <li><a href="#">Montreal</a></li>
+            <li><a href="#">London</a></li>
+            </li>       
+          </ul>
+       
+      <li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in "></span> Login</a></li>
+     
+      </ul>
+      
+       <form class="navbar-form">
+        <div class="form-group" style="display:inline;">
+          <div class="input-group" style="display:table;">
+            <span class="input-group-addon" style="width:1%;"><span class="glyphicon glyphicon-search"></span></span>
+            <input class="form-control" name="search" placeholder="Book Name, Author, ISBN Number" autocomplete="off" autofocus="autofocus" type="text">
+          </div>
+        </div>
+      </form>
+ </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid --></nav>
+
+  <!-- Sidebar -->
+      <div class="container">
+	<div class="row">
+	<br />
+    <br />
+        
+		
+		 <div id="wrapper">
+        
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" style="margin-left:0;">
+                <li class="sidebar-brand">
+                    
+                        <a href="#menu-toggle"  id="menu-toggle" style="margin-top:20px;float:right;" > <i class="fa fa-bars " style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i> 
+                    
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sort-alpha-asc " aria-hidden="true"> </i> <span style="margin-left:10px;">Section</span>  </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-play-circle-o " aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-puzzle-piece" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-font" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-info-circle " aria-hidden="true"> </i> <span style="margin-left:10px;">Section </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa fa-comment-o" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+            </a>
+
+
+                    
+        
+        <!-- /#page-content-wrapper -->
+
+   
+    <!-- /#wrapper -->
+
+    
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+ <!-- Large modal -->
+      
+
+<div id="login-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog margin-auto">
+    	<div class="modal-content">
+        	<div class="modal-body">
+            	<h2 class="text-center text-uppercase">Login to Your Account</h2>
+                <form>
+                	<div class="form-group">
+                    	<input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                    	<input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                    	<input type="submit" class="form-control btn-primary" value="Login">
+                    </div>
+                </form>
+                <p><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#register-modal">Register</a><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#forget-modal">Forget Password</a></p>
+                    <h2 class="text-center text-uppercase">OR</h2>
+                <div class="text-center center-block">
+                     <a href="#"><i class="fa fa-facebook-square fa-3x social"></i></a>
+	                <a href="#"><i class="fa fa-twitter-square fa-3x social"></i></a>
+	                <a href="#"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+	          </div>
+              <!--https://www.facebook.com/
+              https://twitter.com/
+              https://plus.google.com/-->
+                    
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="register-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog margin-auto">
+    	<div class="modal-content">
+        	<div class="modal-body">
+            	<h2 class="text-center text-uppercase">Register to Your Account</h2>
+                <form>
+                	<div class="form-group">
+                    	<input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                	<div class="form-group">
+                    	<input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                    	<input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                    	<input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                    	<input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                    	<input type="submit" class="form-control btn-primary" value="Login">
+                    </div>
+                </form>
+                <p><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Login</a>
+                <a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#forget-modal">Forget Password</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="forget-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog margin-auto">
+    	<div class="modal-content">
+        	<div class="modal-body">
+            	<h2 class="text-center text-uppercase">Forget Your Password</h2>
+                <form>
+                <p class="small">Enter your Email Address that you used to register. We'll send you an email with your username and a link to reset your password.</p>
+                    <div class="form-group">
+                    	<input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--cards-->
+<div class="container">
+    <div class="raw">
+            
+             <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="book2.html"><img class="card-img-top img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5sIyvZ7JO0A-B04Q2NIX9MDV4Uvz8EzipV9Xi_3iFAh2BLXtF" 
+                            hight="150" width="150" alt="Card image"></a>
+                            <div class="card-block">
+                                
+                                <h4 class="card-title"><a href="#">Success of life!</a></h4>
+                                <h2>C$ 20.00</h2>
+                                <h5> Name: Sid </h5> 
+                                <p class="card-text">THIS book is blah blah!, you can write anything! hear blah blah!</p>
+                                 <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                            
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="book2.html"><img class="card-img-top img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5sIyvZ7JO0A-B04Q2NIX9MDV4Uvz8EzipV9Xi_3iFAh2BLXtF" 
+                            hight="150" width="150" alt="Card image"></a>
+                            <div class="card-block">
+                                
+                                <h4 class="card-title"><a href="#">Success of life!</a></h4>
+                                <h2>C$ 15.00</h2>
+                                <h5> Name: John </h5> 
+                                <p class="card-text">THIS book is blah blah!, you can write anything! hear blah blah!</p>
+                                 <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                            
+                        </div>
+                    </div> 
+
+                      <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="book2.html"><img class="card-img-top img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5sIyvZ7JO0A-B04Q2NIX9MDV4Uvz8EzipV9Xi_3iFAh2BLXtF" 
+                            hight="150" width="150" alt="Card image"></a>
+                            <div class="card-block">
+                                
+                                <h4 class="card-title"><a href="#">Success of life!</a></h4>
+                                <h2>C$ 9.00</h2>
+                                <h5> Name: Ryan </h5> 
+                                <p class="card-text">THIS book is blah blah!, you can write anything! hear blah blah!</p>
+                                 <a href="#" class="btn btn-primary">Book Now</a>
+                            </div>
+                            
+                        </div>
+                    </div>  
+
+    </div>
+</div>
+</body>
+
+</html>
+
+
