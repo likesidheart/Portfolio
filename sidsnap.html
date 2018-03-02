@@ -1,283 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>SidSnap</title>
+  <title>SidSnap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/img modal.css">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <!-- lightbox -->
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+  <link href="css/tabs.css" rel="stylesheet" type="text/css">
 
-  </head>
 
-  <body id="page-top">
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/img modal.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <!-- lightbox -->
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript" src="js/tabs.js"></script>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Home</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="sidsnap.html">Photofolio</a>
-            </li>
-          </ul>
-        </div>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">Home</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="sidsnap.html">Photofolio</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- header  starts-->
-    <header class="masthead text-white text-center">
-            <div class="container">
-              <img class="img-fluid mb-5 mx-auto" src="images/sidsnap-4a.jpg" alt="">
-              <h2 class="text-center text-uppercase text-secondary mb-0">Photofolio</h2>
-              <hr class="star-dark mb-5">
-            </div>
-          </header>
-    <!-- header ends-->
-      
+  <!-- header  starts-->
+  <header class="masthead text-white text-center">
+    <div class="container">
+      <img class="img-fluid mb-5 mx-auto" src="images/sidsnap-4a.jpg" alt="">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Photofolio</h2>
+      <hr class="star-dark mb-5">
+    </div>
+  </header>
+  <!-- header ends-->
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Original')" id="defaultOpen">Original</button>
+    <!-- <button class="tablinks" onclick="openCity(event, 'Edited')">Edited</button> -->
+    <button class="tablinks" onclick="openCity(event, 'Typography')">Typography</button>
+  </div>
+
+  <!-- Tab content -->
+  <!-- original start -->
+  <div id="Original" class="tabcontent">
+    <br>
+    <h3 class="tabs_header">Original</h3>
+    <br>
     <!-- img gallery -->
     <div class="imggallery">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
-              <a href="images/gallary/Sunset.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Sunset_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Sunset.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Sunset_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Arch.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Arch_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Arch.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Arch_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Bookeh1.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Bookeh1_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Bookeh1.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Bookeh1_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/bookeh2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/bookeh2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/bookeh2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/bookeh2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Butterfly1.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Butterfly1_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Butterfly1.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Butterfly1_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Butterfly2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Butterfly2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Butterfly2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Butterfly2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Butterfly3.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Butterfly3_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Butterfly3.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Butterfly3_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/cuckko.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/cuckko_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/cuckko.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/cuckko_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Dog1.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Dog1_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Dog1.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Dog1_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Dove1.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Dove1_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Dove1.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Dove1_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Dove3.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Dove3_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Dove3.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Dove3_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Dragonfly1.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Dragonfly1_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Dragonfly1.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Dragonfly1_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/dragonfly2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/dragonfly2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/dragonfly2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/dragonfly2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Flower1.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Flower1_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Flower1.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Flower1_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Flower2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Flower2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Flower2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Flower2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Flower3.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Flower3_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Flower3.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Flower3_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/flower4.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/flower4_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/flower4.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/flower4_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Kitten.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Kitten_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Kitten.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Kitten_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/landscape.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/landscape_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/landscape.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/landscape_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/landscape2.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/landscape2_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/landscape2.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/landscape2_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Lizard1.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Lizard1_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Lizard1.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Lizard1_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/monkey1.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/monkey1_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/monkey1.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/monkey1_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Squarel2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/Squarel2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Squarel2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/Squarel2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/squarel3.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/squarel3_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/squarel3.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/squarel3_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/tunnel.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/tunnel_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/tunnel.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/tunnel_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Tom1.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Tom1_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Tom1.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Tom1_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Waterfall.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Waterfall_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Waterfall.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Waterfall_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/Spider.jpg" data-lightbox="mygallery">
-                <img src="images/gallary/Spider_i.jpg"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/Spider.jpg" data-lightbox="mygallery">
+              <img src="images/gallary/Spider_i.jpg">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/monkey2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/monkey2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/monkey2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/monkey2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/fort2.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/fort2_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/fort2.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/fort2_i.JPG">
+            </a>
           </div>
-          <div class="col-md-3">
-              <a href="images/gallary/vs.JPG" data-lightbox="mygallery">
-                <img src="images/gallary/vs_i.JPG"></a>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/gallary/vs.JPG" data-lightbox="mygallery">
+              <img src="images/gallary/vs_i.JPG">
+            </a>
           </div>
-        </div>
         </div>
       </div>
-      
-      
+     </div>
     </div>
-  
-    <!-- Footer -->
-    <footer class="footer text-center">
+    <!-- original end -->
+    <!-- <div id="Edited" class="tabcontent">
+      <br>
+      <h3 class="tabs_header">Edited</h3>
+      <br>
+      <!-- img gallery -->
+    <!-- <div class="imggallery">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-4 mb-lg-0">
-            <h4 class="text-uppercase mb-6">Contact me</h4>
-            <p class="lead mb-0">+1 (226)-280-5421
-              </p>
-            <p class="lead mb-0">sidht1295@gmail.com
-              </p>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/edited/img1.jpg" data-lightbox="mygallery">
+              <img src="images/edited/img1.jpg">
+            </a>
           </div>
-          <div class="col-md-4 mb-4 mb-lg-0">
-            <h4 class="text-uppercase mb-6">Location</h4>
-            <p class="lead mb-0">Windsor, Ontario, Canada
-              </p>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/edited/img2.jpg" data-lightbox="mygallery">
+              <img src="images/edited/img2.jpg">
+            </a>
           </div>
-          <div class="col-md-4 mb-4 mb-lg-0">
-            <h4 class="text-uppercase mb-6">Around the Web</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.facebook.com/likesidheart/?ref=bookmarks">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.instagram.com/like_sidheart/">
-                  <i class="fa fa-fw fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/edited/img3.jpg" data-lightbox="mygallery">
+              <img src="images/edited/img3.jpg">
+            </a>
           </div>
         </div>
       </div>
-    </footer>
+     </div>
+    </div>
+    </div> --> 
 
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
+    <div id="Typography" class="tabcontent">
+      <br>
+      <h3 class="tabs_header">Typography</h3>
+      <br>
+      <!-- img gallery -->
+    <div class="imggallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Drop.png" data-lightbox="mygallery">
+              <img src="images/typography/Drop_i.png">
+            </a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Vintage.png" data-lightbox="mygallery">
+              <img src="images/typography/Vintage_i.png">
+            </a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Love.png" data-lightbox="mygallery">
+              <img src="images/typography/Love_i.png">
+            </a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Loyalty.png" data-lightbox="mygallery">
+              <img src="images/typography/Loyalty_i.png">
+            </a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Quote1.jpg" data-lightbox="mygallery">
+              <img src="images/typography/Quote1_i.jpg">
+            </a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Quote2.jpg" data-lightbox="mygallery">
+              <img src="images/typography/Quote2_i.jpg">
+            </a>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <a href="images/typography/Lost.jpg" data-lightbox="mygallery">
+              <img src="images/typography/Lost_i.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    </div>
     </div>
 
-     <!-- Portfolio Modals -->
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-            <div class="portfolio-modal-dialog bg-white">
-              <a class="close-button   portfolio-modal-dismiss" href="#">
-                <i class="fa fa-2x fa-times"></i>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <h4 class="text-uppercase mb-6">Contact me</h4>
+          <p class="lead mb-0">+1 (226)-280-5421
+          </p>
+          <p class="lead mb-0">sidht1295@gmail.com
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <h4 class="text-uppercase mb-6">Location</h4>
+          <p class="lead mb-0">Windsor, Ontario, Canada
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-0">
+          <h4 class="text-uppercase mb-6">Around the Web</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.facebook.com/likesidheart/?ref=bookmarks">
+                <i class="fa fa-fw fa-facebook"></i>
               </a>
-              <div class="container text-center">
-                <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                    <img class="img-fluid mb-5" src="img/gallary/sunset.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" target="_blank" href="https://www.instagram.com/like_sidheart/">
+                <i class="fa fa-fw fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button   portfolio-modal-dismiss" href="#">
+        <i class="fa fa-2x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <img class="img-fluid mb-5" src="img/gallary/sunset.jpg" alt="">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
-    
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
-  </body>
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+  <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+</body>
 
 </html>
